@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Diogo Ferreira</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="images/icon.png" rel="shortcut icon" type="image/x-icon"/>
+  
+  <!-- css will be injected here by gulp-inject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+
+<body ng-app="myApp">
+  	<div flex layout="row">
+        <md-content flex="40" offset="30">
+			      <div ng-view flex ui-view=""></div>
+        </md-content>
+	</div>
+
+<!-- js will be injected here by gulp-inject -->
+<!-- inject:js -->
+<!-- endinject -->
+</body>
+<script>
+  // Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDnvvnGKUfwuie86U29Yc3HHBjyJyFw8MQ",
+		authDomain: "portifolio-diogo.firebaseapp.com",
+		databaseURL: "https://portifolio-diogo.firebaseio.com",
+		storageBucket: "portifolio-diogo.appspot.com",
+		messagingSenderId: "1021570843597"
+	};
+	firebase.initializeApp(config);
+	</script>
+</html>
