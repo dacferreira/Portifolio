@@ -58,6 +58,7 @@ config.vendor = {
     './node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js',
     './node_modules/angular-ui-router/release/angular-ui-router.min.js',
     './node_modules/firebase/firebase.js',
+    './node_modules/angularfire/dist/angularfire.min.js',
 
     './js/jquery.min.js',
     './js/jquery.parallax-1.1.3.js',

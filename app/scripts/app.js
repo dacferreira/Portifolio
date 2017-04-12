@@ -17,7 +17,8 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'firebase'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
 
@@ -40,4 +41,7 @@ angular
       //   controller: 'InfosController as infosCtrl'
       // })
       ;
+  })
+  .config(function ($firebaseRefProvider) {
+        $firebaseRefProvider.registerUrl('https://portifolio-diogo.firebaseio.com');
   });

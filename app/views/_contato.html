@@ -1,0 +1,64 @@
+<section class="contact page" id="CONTACTO" data-ng-controller="ContatoController as contatoCrtl">
+		<div class="section_overlay">
+			<div class="container">
+				<div class="col-md-10 col-md-offset-1 wow bounceIn">
+					<!-- Start Contact Section Title-->
+					<div class="section_title">
+						<h2>Precisa de um orçamento?<br>Entre em contato comigo!</h2>
+						<p>Caso queira entrar em contato, sinta-se a vontade para enivar uma mensagem ou dizer Olá através de qualquer um dos
+							links sociais abaixo.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contact_form wow bounceIn">
+				<div class="container">
+					<!-- Inicio da Mensagem de erro e Sucesso -->
+					<div class="form_error text-center">
+						<div class="name_error hide error">Por favor preencha seu nome</div>
+						<div class="email_error hide error">Por favor preencha seu Email</div>
+						<div class="email_val_error hide error">Por favor preencha um Email válido</div>
+						<div class="message_error hide error">Por favor preencha sua mensagem</div>
+					</div>
+					<div class="error" ng-show="contatoCrtl.erroMensagemDeContato">Falha ao enviar mensagem, por favor tente novamente mais tarde.</div>
+					<div class="Sucess" ng-show="contatoCrtl.contatoFeito"><div>Obrigado por entrar em contato, logo estarei lhe retornando.</div></div>
+					<!-- Fim da Mensagem de erro e Sucesso -->
+					<!-- FORM -->
+					<form role="form">
+						<div class="row">
+							<div class="col-md-4">
+								<input type="text" class="form-control" ng-model="contatoCrtl.Nome" id="name" placeholder="Nome">
+								<input type="email" class="form-control" id="email" ng-model="contatoCrtl.Email" placeholder="Email">
+								<input type="text" class="form-control" id="subject" ng-model="contatoCrtl.Assunto" placeholder="Assunto">
+							</div>
+							<div class="col-md-8">
+								<textarea class="form-control" id="message" rows="25" cols="10" ng-model="contatoCrtl.Mensagem" placeholder="  Texto da mensagem..."></textarea>
+								<button type="button" class="btn btn-default submit-btn" ng-click="contatoCrtl.enviarMensagem()">Enviar mensagem</button>
+							</div>
+						</div>
+					</form>
+					<!-- END FORM -->
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow bounceInLeft">
+						<div class="social_icons">
+							<ul>
+								<li><a href="http://facebook.com.br/diogo1812"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li><a href="http://twitter.com/diogoa42"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li><a href="http://instagram.com/dc_ferreira"><i class="fa fa-instagram"></i></a>
+								</li>
+								<li><a href="http://linkedin.com/in/dacferreira"><i class="fa fa-linkedin"></i></a>
+								</li>
+								<li><a href="http://github.com/dacferreira"><i class="fa fa-github"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+			

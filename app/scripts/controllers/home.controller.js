@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name myApp.controller:MainCtrl
+ * @name myApp.controller:HomeController
  * @description
- * # MainCtrl
+ * # HomeController
  * Controller of the myApp
  */
 angular.module('myApp')
   .controller('HomeController', function () {
     var vm = this;
-    vm.title = 'AngularJS Template';
+    vm.title = '</> ';  
     
     });

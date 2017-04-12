@@ -11,7 +11,7 @@
 	<!-- =========================
      START ABOUT US SECTION
 	============================== -->
-	<section class="header parallax home-parallax page" id="HOME">
+	<section class="header parallax home-parallax page" id="HOME" data-ng-controller="HomeController as home">
 		<h2></h2>
 		<div class="section_overlay">
 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -25,7 +25,7 @@
                             <span class="icon-bar"></span>
                         </button>
 						<a class="navbar-brand" style="color:orange !important;" href="#">
-							<span><b>Diogo Ferreira</b></span>
+							<span><b style="font-family: Consola; font-size:200%;font-weight: bold;">{{ home.title }}</b> <b style="font-family: Consola; font-size:150%;font-style: oblique;">Diogo Ferreira</b></span>
 						</a>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -155,79 +155,15 @@
 	</section>
 	<!-- End About Us -->
 
-	<!-- =========================
+<!-- =========================
      START CONTCT FORM AREA
 ============================== -->
- 
-	<section class="contact page" id="CONTACTO">
-		<div class="section_overlay">
-			<div class="container">
-				<div class="col-md-10 col-md-offset-1 wow bounceIn">
-					<!-- Start Contact Section Title-->
-					<div class="section_title">
-						<h2>Precisa de um orçamento?<br>Entre em contato comigo!</h2>
-						<p>Caso queira entrar em contato, sinta-se a vontade para enivar uma mensagem ou dizer Olá através de qualquer um dos
-							links sociais abaixo.</p>
-					</div>
-				</div>
-			</div>
-			<pre>{{ contatoFeito | json }}</pre>
-			<pre>{{ $scope.contatoFeito | json }}</pre>
-			<div class="contact_form wow bounceIn">
-				<div class="container">
-					<!-- Inicio da Mensagem de erro e Sucesso -->
-					<div class="form_error text-center">
-						<div class="name_error hide error">Por favor preencha seu nome</div>
-						<div class="email_error hide error">Por favor preencha seu Email</div>
-						<div class="email_val_error hide error">Por favor preencha um Email válido</div>
-						<div class="message_error hide error">Por favor preencha sua mensagem</div>
-					</div>
-					<div class="Sucess" ng-show="contatoFeito"><div>Obrigado por entrar em contato, logo estarei lhe retornando.</div></div>
-					<!-- Fim da Mensagem de erro e Sucesso -->
-					<!-- FORM -->
-					<form role="form">
-						<div class="row">
-							<div class="col-md-4">
-								<input type="text" class="form-control" ng-model="Nome" id="name" placeholder="Nome">
-								<input type="email" class="form-control" id="email" ng-model="Email" placeholder="Email">
-								<input type="text" class="form-control" id="subject" ng-model="Assunto" placeholder="Assunto">
-							</div>
-							<div class="col-md-8">
-								<textarea class="form-control" id="message" rows="25" cols="10" ng-model="Mensagem" placeholder="  Texto da mensagem..."></textarea>
-								<button type="button" class="btn btn-default submit-btn" ng-click="enviarMensagem()">Enviar mensagem</button>
-							</div>
-						</div>
-					</form>
-					<!-- END FORM -->
-				</div>
-			</div>
+ <div ng-include src="'views/_contato.html'"></div>
+	
 
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow bounceInLeft">
-						<div class="social_icons">
-							<ul>
-								<li><a href="http://facebook.com.br/diogo1812"><i class="fa fa-facebook"></i></a>
-								</li>
-								<li><a href="http://twitter.com/diogoa42"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li><a href="http://instagram.com/dc_ferreira"><i class="fa fa-instagram"></i></a>
-								</li>
-								<li><a href="http://linkedin.com/in/dacferreira"><i class="fa fa-linkedin"></i></a>
-								</li>
-								<li><a href="http://github.com/dacferreira"><i class="fa fa-github"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<!-- END CONTACT -->
 
-	<!-- END CONTACT -->
-
-	<!-- =========================
+<!-- =========================
      FOOTER 
 ============================== -->
 
