@@ -14,13 +14,15 @@
 				<div class="container">
 					<!-- Inicio da Mensagem de erro e Sucesso -->
 					<div class="form_error text-center">
-						<div class="name_error hide error">Por favor preencha seu nome</div>
-						<div class="email_error hide error">Por favor preencha seu Email</div>
-						<div class="email_val_error hide error">Por favor preencha um Email válido</div>
-						<div class="message_error hide error">Por favor preencha sua mensagem</div>
+						<div class="name_error error" ng-show="contatoCrtl.campoNomeNaoPreenchido">Por favor preencha seu nome</div>
+						<div class="email_error error" ng-show="contatoCrtl.campoEmailNaoPreenchido">Por favor preencha seu e-mail</div>
+						<div class="email_val_error error" ng-show="contatoCrtl.campoEmailInvalido">Por favor preencha um e-mail válido</div>
+						<div class="message_error error" ng-show="contatoCrtl.campoMensagemNaoPreenchido">Por favor preencha sua mensagem</div>
 					</div>
-					<div class="error" ng-show="contatoCrtl.erroMensagemDeContato">Falha ao enviar mensagem, por favor tente novamente mais tarde.</div>
-					<div class="Sucess" ng-show="contatoCrtl.contatoFeito"><div>Obrigado por entrar em contato, logo estarei lhe retornando.</div></div>
+					<div class="error" ng-show="contatoCrtl.erroMensagemDeContato"><div>Falha ao enviar mensagem, por favor tente novamente mais tarde.</div></div>
+					<div class="form_error text-center">
+						<div class="Sucess" ng-show="contatoCrtl.contatoFeito"><div>Obrigado por entrar em contato, logo estarei lhe retornando.</div></div>
+					</div>
 					<!-- Fim da Mensagem de erro e Sucesso -->
 					<!-- FORM -->
 					<form role="form">
