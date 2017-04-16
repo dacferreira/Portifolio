@@ -1,47 +1,9 @@
-	<!-- PRELOADER -->
-	<div class="spn_hol">
-		<div class="spinner">
-			<div class="bounce1"></div>
-			<div class="bounce2"></div>
-			<div class="bounce3"></div>
-		</div>
-	</div>
-	<!-- END PRELOADER -->
-
 	<!-- =========================
      START ABOUT US SECTION
 	============================== -->
-	<section class="header parallax home-parallax page" id="HOME" data-ng-controller="HomeController as home">
+	<section class="header parallax home-parallax page" id="home" data-ng-controller="HomeController as home">
 		<h2></h2>
-		<div class="section_overlay">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-						<a class="navbar-brand" style="color:orange !important;" href="#">
-							<span><b style="font-family: Consola; font-size:200%;font-weight: bold;">{{ home.title }}</b> <b style="font-family: Consola; font-size:150%;font-style: oblique;">Diogo Alves</b></span>
-						</a>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-right">
-							<!-- NAV -->
-							<li><a href="#HOME">HOME</a> </li>
-							<li><a href="#ABOUT">QUEM SOU EU</a> </li>
-							<!--<li><a href="#PORTIFOLIO">PORTIFÓLIO</a></li>-->
-							<li><a href="#CONTACTO">CONTATO </a> </li>
-						</ul>
-					</div>
-					<!-- /.navbar-collapse -->
-				</div>
-				<!-- /.container- -->
-			</nav>
+		<div class="section_overlay">		
 			<div class="container home-container">
 				<div class="row">
 					<div class="col-md-12">
@@ -56,12 +18,12 @@
 						<div class="home_text">
 							<!-- TITLE AND DESC -->			
 							<h1 class="type-text">Se você está em busca de um programador freelancer Full-Stack, entre em contato: diogoa42@gmail.com</h1>
-							<p>Graduado em Sistemas de Informação, Diogo combina sua educação com seis anos de experiência com desenvolvimento web
-								para entregar produtos de qualidade para clientes. Quer saber mais? <a href="#ABOUT">Clique Aqui.</a></p>
+							<p>Graduado em Sistemas de Informação, eu combino minha educação com seis anos de experiência em desenvolvimento web
+								para entregar produtos de qualidade para clientes. Quer saber mais? <a href="" ng-click="home.GoToDiv('about')">Clique Aqui.</a></p>
 
 							<div class="download-btn">
 								<!-- BUTTON -->
-								<a class="tuor btn wow fadeInRight" href="#ABOUT">Faça um tour <i class="fa fa-eye"></i></a>
+								<a class="tuor btn wow fadeInRight" href="" ng-click="home.GoToDiv('about')">Faça um tour <i class="fa fa-eye"></i></a>
 							</div>
 						</div>
 					</div>
@@ -74,117 +36,13 @@
 	<!-- =========================
      START ABOUT US SECTION
 ============================== -->
-	<section class="about page" id="ABOUT">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<!-- ABOUT US SECTION TITLE-->
-					<div class="section_title">
-						<h2>Quem sou eu</h2>
-						<p>Eu sou um Full Stack Web Developer. O que isso quer dizer? Eu faço websites! Me graduei em Sistemas de Informação mas,
-							junto à isso, tenho mais de 6 anos de experiência comercial com web, sempre trabalhando como desenvolvedor de sites
-							e soluções para o mercado. Na maioria dos projetos que desenvolvo, trabalho com outros profissionais freelancers,
-							onde sempre procuramos utilizar soluções no estado da arte, a fim de melhorar a presença no mundo online do cliente
-							em questão. Meus clientes normalmente aproximam-se de mim quando eles precisam de alguém que os possa prover:</p>
-						<ul>
-							<li><strong>Protótipos de Web Sites</strong>
-								<ul>
-									<li>Wireframes</li>
-									<li>Mockups</li>
-								</ul>
-							</li>
-							<li><strong>Desenvolvimento Back/Front-end</strong>
-								<ul>
-									<li>HTML/HTML5</li>
-									<li>CSS</li>
-									<li>JavaScript/jQuery</li>
-									<li>Performance</li>
-									<li>C#</li>
-									<li>Sistemas de Gerenciamento de conteúdo</li>
-								</ul>
-							</li>
-							<li><strong>Melhorias de performance em websites já&nbsp;online</strong>.</li>
-						</ul>
-						<p>Quando estou desenvolvendo um website, sempre foco em produzir uma solução que alcance seus objetivos ao mesmo tempo
-							que ofereça a melhor tecnologia possível. Isso envolve produzir um website que:</p>
-						<ul>
-							<li>Pode ser acessado de qualquer tipo de dispositivo, com qualquer tamanho de tela, seja este um smartphone ou uma TV,
-								através de layouts responsivos.</li>
-							<li>É otimizado para performance.</li>
-							<!--<li>Segue as melhores práticas de acessibilidade, SEO e usabilidade.</li>-->
-							<li>Utiliza a tecnologia mais atual.</li>
-							<li>É muito bem documentado e escalável.</li>
-						</ul>
-						<h2 id="skills">Minhas Skills</h2>
-						<p>Possuo uma ampla gama de conhecimentos, todos voltados à web; web-development é minha especialidade. Tendo experiência
-							na área de desenvolvimento, sou capaz de produzir projetos com todo o escopo em mente, o que traduz em uma experiência
-							coesiva para os seus usuários.</p>
-						<h3 id="design">Desenvolvedor Front-End</h3>
-
-						<div class="single_about_area wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-							<div class="logos">
-								<div class="logo">
-									<img class="alignnone wp-image-52 size-medium" src="images/html-css-js1.png" alt="html-css-js" width="300" height="81" sizes="(max-width: 300px) 100vw, 300px">
-								</div>
-							</div>
-						</div>
-					</div>
-					<br><br>
-					<p>Eu crio websites que proporcionam para o usuário a melhor experiência na melhor e mais apropriada tecnologia para o
-						projeto em questão. Por trabalhar utilizando a metodologia de melhorias progressivas, o projeto é sempre entregue com
-						um layout responsivo que fará o melhor uso do espaço disponível do dispositivo do usuário. A compatibilidade entre
-						browsers é garantida utilizando a detecção de features, sendo assim, usuários que ainda trabalham com navegadores antigos
-						tem uma experiência sólida com o seu produto.</p>
-					<h3>DESENVOLVEDOR BACK-END</h3>
-					<div class="single_about_area wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-						<div class="logos">
-							<div class="logo">
-								<img class="alignnone wp-image-52 size-medium" src="images/backend.png" alt="html-css-js" width="300" height="81" sizes="(max-width: 300px) 100vw, 300px">
-							</div>
-						</div>
-					</div>
-					<br><br><br><br>
-					<p>Em paralelo ao desenvolvimento front-end, também desenvolvo aplicações e sistemas que sejam exatamente o que o cliente
-						precisa, seja esta uma plataforma sob-demanda ou alguma customização de plataformas abertas, como o WordPress, por
-						exemplo.
-						</p>
-							<br><br><br><br>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 	<!-- End About Us -->
+ <div ng-include src="'views/_about.html'"></div>	
 
 <!-- =========================
      START CONTCT FORM AREA
 ============================== -->
- <div ng-include src="'views/_contato.html'"></div>
-	
+ <div ng-include src="'views/_contato.html'"></div>	
 
 <!-- END CONTACT -->
-
-<!-- =========================
-     FOOTER 
-============================== -->
-
-	<section class="copyright">
-		<h2></h2>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="copy_right_text">
-						<!-- COPYRIGHT TEXT -->
-						<p style="width:400px !important;">Copyright &copy; 2017
-							<a href=""></a> <span>By </span><a>Diogo Ferreira</a></p>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="scroll_top">
-						<a href="#HOME"><i class="fa fa-angle-up"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END FOOTER -->

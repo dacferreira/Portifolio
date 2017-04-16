@@ -14,6 +14,17 @@
 </head>
 
 <body ng-app="myApp">
+	<!-- PRELOADER -->
+	<div class="spn_hol">
+		<div class="spinner">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+	</div>
+
+	<div ng-include src="'views/_nav.html'"></div>	
+	<!-- END PRELOADER -->
   	<div flex layout="row">
         <md-content flex="40" offset="30">
 			      <div ng-view flex ui-view=""></div>
@@ -24,6 +35,27 @@
 <!-- inject:js -->
 <!-- endinject -->
 </body>
+<footer>
+	<section class="copyright">
+		<h2></h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="copy_right_text">
+						<p style="width:400px !important;">Copyright &copy; 2017
+							<a href=""></a> <span>By </span><a>Diogo Alves</a></p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="scroll_top">
+						<a href="#"><i class="fa fa-angle-up"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
 <script>
   // Initialize Firebase
 	var config = {

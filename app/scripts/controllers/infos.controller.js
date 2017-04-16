@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name myApp.controller:AboutCtrl
+ * @name myApp.controller:InfosController
  * @description
- * # AboutCtrl
+ * # InfosController
  * Controller of the myApp
  */
 angular.module('myApp')

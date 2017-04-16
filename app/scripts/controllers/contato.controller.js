@@ -34,7 +34,9 @@ angular.module('myApp')
          vm.campoEmailNaoPreenchido = false;
          //vm.campoEmailInvalido = false;
          vm.campoMensagemNaoPreenchido = false;
-
+         vm.erroMensagemDeContato = false;
+         vm.contatoFeito = false;
+         
          if(!vm.Nome)
          {
              vm.campoNomeNaoPreenchido = true;

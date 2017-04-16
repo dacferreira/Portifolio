@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name myApp.controller:HomeController
+ * @name myApp.controller:NavController
  * @description
- * # HomeController
+ * # NavController
  * Controller of the myApp
  */
 angular.module('myApp')
-  .controller('HomeController', function ($scope, $location, $anchorScroll) {
+  .controller('NavController', function ($scope, $location, $anchorScroll) {
     var vm = this;
     vm.title = '</> ';  
     

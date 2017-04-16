@@ -11,6 +11,8 @@
 # Package management
 /node_modules
 /bower_components
+/functions/node_modules
+/functions/bower_components
 
 # Temp files
 /.tmp
