@@ -18,7 +18,8 @@ angular
     'ui.router',
     'ngSanitize',
     'ui.bootstrap',
-    'firebase'
+    'firebase',
+    'angular-typed'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
 

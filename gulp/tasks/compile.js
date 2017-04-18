@@ -57,7 +57,8 @@ gulp.task('compileStyles', function () {
         './app/styles',
           './app/styles/components',
           './node_modules/bootstrap-sass/assets/stylesheets',
-          './node_modules/fontawesome/scss'
+          './node_modules/fontawesome/scss',
+          './node_modules/angular-typed/dist/src'
         ]
     }))
     .pipe(autoprefixer())

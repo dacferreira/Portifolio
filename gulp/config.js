@@ -59,6 +59,7 @@ config.vendor = {
     './node_modules/angular-ui-router/release/angular-ui-router.min.js',
     './node_modules/firebase/firebase.js',
     './node_modules/angularfire/dist/angularfire.min.js',
+    './node_modules/angular-typed/dist/angular-typed.min.js',
 
     './js/jquery.min.js',
     './js/jquery.parallax-1.1.3.js',
@@ -74,8 +75,7 @@ config.vendor = {
     
     './js/wow.min.js',
     './js/waypoints.min.js',
-    './js/script.js',
-    './js/type.js'
+    './js/script.js'
   ],
   fonts: [
     './node_modules/bootstrap-sass/assets/fonts/bootstrap/**/*.{eot,svg,ttf,woff,woff2}',
